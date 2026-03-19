@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTOS CLUB // SECURITY COMMAND CENTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Warning Prompt Modal -->
+    <div id="warning-overlay">
+        <div class="warning-box">
+            <h1 class="alert-text">[ ! ] SYSTEM CRITICAL [ ! ]</h1>
+            <p>UNAUTHORIZED ACCESS DETECTED: JUICESHOP_SERVER_01</p>
+            <p class="sub-text">Tracing source IP... Connection Encrypted.</p>
+            <button class="init-btn" onclick="startMission()">INITIALIZE COUNTER-MEASURES</button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">CTSO  NOSS CLUB // SECURE_HUB</div>
+        <div class="status-blink" id="system-status">● ENCRYPTION_ACTIVE</div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="menu-item active">> TICKETING_SYSTEM</div>
+            <div class="menu-item">> THREAT_LOGS</div>
+            <div class="menu-item">> NETWORK_ANALYSIS</div>
+            
+            <a href="https://forms.office.com/r/KpG8zd0xTa" target="_blank">
+                <button class="btn-report">[ SUBMIT SOC REPORT ]</button>
+            </a>
+            <button id="muteBtn" onclick="stopAllAudio()">[ SILENCE ALARM ]</button>
+        </div>
+        
+        <div class="main-stage">
+            <div class="terminal-box">
+                <h1>CTSO UNIT v1.0</h1>
+                <p id="mission-text">Awaiting System Initialization...</p>
+                <div id="label-info">
+                    CURRENT ROLES: <br>
+                    <span class="red-label">RED: LEAD ANALYST</span> | 
+                    <span class="blue-label">BLUE: TECH ANALYST</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="alarmSound" src="audio/alarm.mp3" preload="auto"></audio>
+    <audio id="briefingAudio" src="audio/briefing.mp3" preload="auto"></audio>
+
+    <!-- PASTE YOUR DIALOGFLOW MESSENGER CODE BELOW -->
+     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;ibb.co&#x2F;B5PZC9r2"
+  intent="WELCOME"
+  chat-title="SOC_Simulation_Lab"
+  agent-id="4fc6548d-70ed-48c3-9697-81c9608666c3"
+  language-code="en"
+></df-messenger>
+    
+    <script src="script.js"></script>
+</body>
+</html>
